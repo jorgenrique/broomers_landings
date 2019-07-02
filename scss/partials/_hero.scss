@@ -1,0 +1,47 @@
+.hero {
+
+    background-image: linear-gradient(to bottom, $c-black, $c-primary);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 6rem;
+    position: relative;
+    width: 100vw;
+
+    .content {
+
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem 2rem 1rem;
+
+        h1,
+        p {
+
+            color: $c-white;
+            text-align: center;
+            max-width: 600px;
+        }
+
+        h2 {
+
+            color: transparent;
+            position: absolute;
+            z-index: -2;
+        }
+    }
+
+    .image {
+
+        display: flex;
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+
+        img {
+
+            height: 100%;
+            @include center(x);
+        }
+    }
+}

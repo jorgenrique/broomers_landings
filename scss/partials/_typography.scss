@@ -4,48 +4,22 @@ a {
     text-decoration: none;
 }
 
-h1 { font-size: 2.488rem }
+h1 {
+
+    font-size: 2.488rem;
+    line-height: 1.2;
+    margin: 0 0 3rem 0;
+}
+
 h2 { font-size: 2.074rem }
 h3 { font-size: 1.728rem }
 h4 { font-size: 1.44rem }
 h5 { font-size: 1.2rem }
 h6 { font-size: 0.833rem }
-p { font-size: 1rem }
 
-h2,
-p { margin-bottom: 1rem }
+p {
 
-.underline {
-
-    overflow: hidden;
-    position: relative;
-
-    .und_text {
-
-        position: relative;
-        z-index: 2;
-    }
-
-    &:after {
-
-        content: "";
-
-        background-color: $c-primary;
-        bottom: -2px;
-        height: 2px;
-        left: 0;
-        position: absolute;
-        right: 100%;
-        z-index: 0;
-
-        -webkit-transition: all 200ms ease-in-out;
-        -ms-transition: all 200ms ease-in-out;
-        -moz-transition: all 200ms ease-in-out;
-        transition: all 200ms ease-in-out;
-    }
-
-    &:hover {
-
-        &:after { right: 0 }
-    }
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
 }

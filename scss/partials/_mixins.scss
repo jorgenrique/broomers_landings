@@ -4,27 +4,55 @@
 
     @if $xy == xy {
 
-        left: 50%;
-        top: 50%;
         bottom: auto;
+        left: 50%;
+        position: absolute;
         right: auto;
-        @include transform(translateX(-50%) translateY(-50%));
+        top: 50%;
+        transform: translate( -50%, -50% );
     }
 
     @else if $xy == x {
 
         left: 50%;
+        position: absolute;
         right: auto;
-        @include transform(translateX(-50%));
+        transform: translateX( -50% );
     }
 
     @else if $xy == y {
 
-        top: 50%;
         bottom: auto;
-        @include transform(translateY(-50%));
+        position: absolute;
+        transform: translateY( -50% );
+        top: 50%;
     }
 }
+
+@mixin shadow-standard {
+
+    -webkit-box-shadow: 0px 0px 20px 0px rgba($c-black,0.25);
+    -moz-box-shadow: 0px 0px 20px 0px rgba($c-black,0.25);
+    box-shadow: 0px 0px 20px 0px rgba($c-black,0.25);
+}
+
+@mixin button($bg-1: $c-primary, $bg-2: $c-primary__dark, $text-color: $c-white) {
+
+    background-image: linear-gradient(to right, $bg-1, $bg-2);
+    border-radius: 21px;
+    cursor: pointer;
+    color: $text-color;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 12px 16px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include shadow-standard;
+}
+
+@mixin transition { transition: all 0.3s ease-in-out; }
 
 // antialiasing mode font rendering
 
