@@ -1,0 +1,36 @@
+.wrapper {
+
+    padding-bottom: 80px;
+
+    .logo {
+
+        background-color: $c-white;
+        border-radius: 0 0 8px 8px;
+        left: 10%;
+        padding: 9px 16px;
+        position: fixed;
+        top: 0;
+        z-index: 16;
+
+        @include shadow-standard;
+
+        img { height: 16px; }
+    }
+
+    .cta {
+
+        @include button;
+        @include center(x);
+
+        bottom: 24px;
+        position: fixed;
+        min-width: 240px;
+        z-index: 10;
+    }
+
+    section {
+
+        padding: 8rem 1rem 0 1rem;
+        &.hero { padding: 8rem 0 0 0; }
+    }
+}
