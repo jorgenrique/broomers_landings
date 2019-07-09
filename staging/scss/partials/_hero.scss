@@ -42,6 +42,14 @@
             position: absolute;
             top: 0;
             width: 100%;
+
+            &.mobile { @include MQ(M) { display: none; } }
+
+            &.desktop {
+
+                display: none;
+                @include MQ(M) { display: block; }
+            }
         }
     }
 }

@@ -38,7 +38,11 @@
 
 @mixin button($bg-1: $c-primary, $bg-2: $c-primary__dark, $text-color: $c-white) {
 
-    background-image: linear-gradient(to right, $bg-1, $bg-2);
+    @include shadow-standard;
+    @include transition;
+
+    background: linear-gradient(90deg, $bg-2 0%, $bg-1 100%);
+    border: 2px solid $text-color;
     border-radius: 21px;
     cursor: pointer;
     color: $text-color;
@@ -49,7 +53,11 @@
     text-align: center;
     text-transform: uppercase;
 
-    @include shadow-standard;
+    &:hover {
+
+        color: $bg-1;
+        background: linear-gradient(90deg, $text-color 0%, $text-color 100%);;
+    }
 }
 
 @mixin transition { transition: all 0.3s ease-in-out; }
