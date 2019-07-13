@@ -1,7 +1,5 @@
 .wrapper {
 
-    padding-bottom: 80px;
-
     .logo {
 
         background-color: $c-white;
@@ -26,11 +24,34 @@
         position: fixed;
         min-width: 240px;
         z-index: 10;
+
+        @include MQ(M) {
+
+            @include button($c-white, $c-white, $c-primary);
+
+            bottom: auto;
+            border-color: transparent;
+            left: auto;
+            right: 24px;
+            top: 24px;
+            transform: none;
+
+            &:hover { border: 2px solid $c-white; }
+        }
     }
 
     section {
 
         padding: 8rem 1rem 0 1rem;
         &.hero { padding: 8rem 0 0 0; }
+        &.locations,
+        &.reasons { padding-bottom: 8rem; }
+    }
+
+    .footer {
+        display: flex;
+        font-size: 12px;
+        justify-content: center;
+        padding: 8px 0;
     }
 }

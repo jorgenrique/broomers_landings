@@ -39,16 +39,25 @@
 
         img {
 
-            position: absolute;
-            top: 0;
+            @include center(x);
+
             width: 100%;
 
-            &.mobile { @include MQ(M) { display: none; } }
+            &.mobile {
+
+                @include MQ(M) { display: none; }
+
+                top: 0;
+            }
 
             &.desktop {
 
-                display: none;
                 @include MQ(M) { display: block; }
+
+                bottom: 0;
+                display: none;
+                max-width: 600px;
+                top: auto;
             }
         }
     }
