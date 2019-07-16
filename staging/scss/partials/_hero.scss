@@ -58,6 +58,10 @@
                 display: none;
                 max-width: 600px;
                 top: auto;
+
+                //@include MQ(L) { max-width: 700px; }
+                @include MQ(XL) { max-width: 800px; }
+                @include MQ(XXL) { max-width: 900px; }
             }
         }
     }

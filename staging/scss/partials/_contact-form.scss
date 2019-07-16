@@ -91,10 +91,8 @@
 
                 .button {
 
-                    @include button($c-white, $c-white, $c-primary);
+                    @include button;
                     border-color: transparent;
-
-                    &:hover { border: 2px solid $c-white; }
                 }
             }
         }

@@ -12,12 +12,16 @@
 
         @include shadow-standard;
 
-        img { height: 16px; }
+        img {
+
+            height: 16px;   
+            @include MQ(M) { height: 24px; }
+        }
     }
 
     .cta {
 
-        @include button;
+        @include button($c-red_light, $c-red_light, $c-white);
         @include center(x);
 
         bottom: 24px;
@@ -27,16 +31,11 @@
 
         @include MQ(M) {
 
-            @include button($c-white, $c-white, $c-primary);
-
             bottom: auto;
-            border-color: transparent;
             left: auto;
             right: 24px;
             top: 24px;
             transform: none;
-
-            &:hover { border: 2px solid $c-white; }
         }
     }
 
@@ -53,5 +52,11 @@
         font-size: 12px;
         justify-content: center;
         padding: 8px 0;
+
+        a {
+
+            margin-left: 4px;
+            text-decoration: underline;
+        }
     }
 }
