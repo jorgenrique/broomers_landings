@@ -8,6 +8,12 @@
     position: relative;
     width: 100vw;
 
+    @include MQ(M) {
+
+        flex-direction: row;
+        align-items: center;
+    }
+
     &:after {
 
         content: "";
@@ -24,6 +30,7 @@
 
         align-items: flex-start;
         display: flex;
+        flex: 1;
         flex-direction: column;
         padding: 0 2rem;
 
@@ -35,10 +42,10 @@
             max-width: 70%;
             position: relative;
             z-index: 2;
+
+            @include MQ(M) { max-width: 90%; }
         }
 
         h1 { margin-bottom: 2rem;}
     }
-
-    .contact-form.desktop { display: none; }
 }

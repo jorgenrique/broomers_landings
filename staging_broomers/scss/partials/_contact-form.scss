@@ -1,13 +1,28 @@
 .contact-form {
 
     padding: 1rem;
+    position: relative;
+    z-index: 1;
+
+    &.desktop {
+
+        @include MQ(M) { display: flex; }
+        display: flex;
+        flex: 1;
+    }
+
+    &.mobile { @include MQ(M) { display: none; }}
 
     .content {
 
         align-items: center;
+        background-color: $c-white;
         display: flex;
         flex-direction: column;
+        padding: 2rem;
         padding-top: 80px;
+
+        @include MQ(M) { padding: 5rem }
 
         p {
 
