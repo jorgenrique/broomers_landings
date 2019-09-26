@@ -1,0 +1,49 @@
+.steps {
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 1rem 2rem 1rem;
+
+    //@include MQ(M) { flex-direction: row; }
+
+    .step {
+
+        position: relative;
+        margin-bottom: 2rem;
+        max-width: 480px;
+
+        .content {
+
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            height: 12rem;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        img {
+
+            height: 80%;
+            position: absolute;
+            right: 0;
+            top: 10%;
+
+        }
+
+        h3,
+        p {
+
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+
+        @include MQ(M) {
+
+            justify-content: flex-start;
+            padding: 0 1rem;
+        }
+    }
+}

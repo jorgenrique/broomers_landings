@@ -1,0 +1,55 @@
+@import 'partials/variables'; // colors, fonts etc...
+
+@import 'partials/mixins';
+@import 'partials/typography';
+
+@import 'partials/layout';
+
+@import 'partials/hero';
+@import 'partials/steps';
+@import 'partials/reasons';
+@import 'partials/last';
+@import 'partials/contact-form';
+
+*,
+*::after,
+*::before { box-sizing: border-box; }
+
+::selection {
+
+  background: $c-primary;
+  color: $c-white;
+}
+::-moz-selection {
+
+  background: $c-primary;
+  color: $c-white;
+}
+
+html,
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	font-size: 14px;
+	line-height: 1.2;
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+
+    @include MQ(XL) { font-size: 16px; }
+}
+
+body {
+
+	font: {
+
+		size: 1rem;
+		family: $primary-font;
+	}
+
+	color: $c-black;
+
+	@include font-smoothing;
+}
