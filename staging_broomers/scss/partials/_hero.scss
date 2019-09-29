@@ -3,16 +3,10 @@
     background-image: url('../img/house.jpg');
     background-position: center;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
     position: relative;
     width: 100vw;
 
-    @include MQ(M) {
-
-        flex-direction: row;
-        align-items: center;
-    }
+    @include MQ(M) { height: 100vh; }
 
     &:after {
 
@@ -24,6 +18,20 @@
         right: 0;
         top: 0;
         z-index: 0;
+    }
+
+    .wrapper {
+
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+
+        @include MQ(M) {
+
+            align-items: center;
+            flex-direction: row;
+            margin: auto;
+        }
     }
 
     .content {
@@ -39,11 +47,9 @@
 
             color: $c-black;
             text-align: left;
-            max-width: 70%;
+            max-width: 400px;
             position: relative;
             z-index: 2;
-
-            @include MQ(M) { max-width: 90%; }
         }
 
         h1 { margin-bottom: 2rem;}

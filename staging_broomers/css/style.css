@@ -100,6 +100,8 @@ h6 {
     padding: 8rem 0 4rem; }
     @media only screen and (min-width: 768px) {
       .wrapper section.hero {
+        align-items: center;
+        display: flex;
         padding: 4rem 2rem; } }
 .wrapper .footer {
   display: flex;
@@ -114,14 +116,11 @@ h6 {
   background-image: url("../img/house.jpg");
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
   position: relative;
   width: 100vw; }
   @media only screen and (min-width: 768px) {
     .hero {
-      flex-direction: row;
-      align-items: center; } }
+      height: 100vh; } }
   .hero:after {
     content: "";
     background-image: linear-gradient(to top right, white 30%, rgba(255, 255, 255, 0));
@@ -131,6 +130,15 @@ h6 {
     right: 0;
     top: 0;
     z-index: 0; }
+  .hero .wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px; }
+    @media only screen and (min-width: 768px) {
+      .hero .wrapper {
+        align-items: center;
+        flex-direction: row;
+        margin: auto; } }
   .hero .content {
     align-items: flex-start;
     display: flex;
@@ -141,13 +149,9 @@ h6 {
     .hero .content p {
       color: #222;
       text-align: left;
-      max-width: 70%;
+      max-width: 400px;
       position: relative;
       z-index: 2; }
-      @media only screen and (min-width: 768px) {
-        .hero .content h1,
-        .hero .content p {
-          max-width: 90%; } }
     .hero .content h1 {
       margin-bottom: 2rem; }
 
@@ -238,7 +242,7 @@ h6 {
   position: relative;
   z-index: 1; }
   .contact-form.desktop {
-    display: flex;
+    display: none;
     flex: 1; }
     @media only screen and (min-width: 768px) {
       .contact-form.desktop {

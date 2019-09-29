@@ -48,7 +48,13 @@
         &.hero {
 
             padding: 8rem 0 4rem;
-            @include MQ(M) { padding: 4rem 2rem; }
+
+            @include MQ(M) {
+
+                align-items: center;
+                display: flex;
+                padding: 4rem 2rem;
+            }
         }
     }
 
