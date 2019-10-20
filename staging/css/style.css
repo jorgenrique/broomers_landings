@@ -46,7 +46,7 @@ h6 {
 .wrapper section {
   padding: 8rem 1rem 0 1rem; }
   .wrapper section.hero {
-    padding: 8rem 0 0 0; }
+    padding: 7rem 0 0 0; }
   .wrapper section.locations, .wrapper section.reasons {
     padding-bottom: 8rem; }
 .wrapper .footer {
@@ -83,17 +83,27 @@ h6 {
           height: 24px;
           margin-bottom: 6px; } }
   .header .cta {
-    align-items: center;
-    background-color: #D98324;
+    background-color: #ff8c00;
     color: #fff;
     cursor: pointer;
-    display: flex;
     letter-spacing: 1px;
-    padding: 0 48px;
     text-transform: uppercase;
-    transition: all 0.5s ease-in-out; }
-    .header .cta:hover {
-      background-color: #439417; }
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 0;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .header .cta:hover {
+        background-color: #439417; } }
+    @media only screen and (min-width: 768px) {
+      .header .cta {
+        align-items: center;
+        display: flex;
+        padding: 0 48px;
+        position: static;
+        transition: all 0.5s ease-in-out; } }
 
 .hero.client {
   background: linear-gradient(180deg, #145D08 0%, #439417 100%);
@@ -375,7 +385,7 @@ h6 {
       -moz-box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
       box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
       transition: all 0.5s ease-in-out;
-      background: linear-gradient(90deg, #D98324 0%, #D98324 100%);
+      background: linear-gradient(90deg, #ff8c00 0%, #ff8c00 100%);
       border-radius: 21px;
       cursor: pointer;
       color: #fff;
@@ -387,7 +397,7 @@ h6 {
       text-transform: uppercase;
       border-color: transparent; }
       .form-signup .clear .button:hover {
-        color: #D98324;
+        color: #ff8c00;
         background: linear-gradient(90deg, #fff 0%, #fff 100%); }
 
 *,

@@ -33,18 +33,33 @@
 
     .cta {
 
-
-        align-items: center;
         background-color: $c-secondary;
         color: $c-white;
         cursor: pointer;
-        display: flex;
         letter-spacing: 1px;
-        padding: 0 48px;
         text-transform: uppercase;
 
-        @include transition;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 12px 0;
+        text-align: center;
 
-        &:hover { background-color: $c-primary; }
+        &:hover {
+
+            @include MQ(M) { background-color: $c-primary; }
+        }
+
+        @include MQ(M) {
+
+            align-items: center;
+            display: flex;
+            padding: 0 48px;
+
+            position: static;
+
+            @include transition;
+        }
     }
 }
