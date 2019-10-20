@@ -1,0 +1,50 @@
+.header {
+
+    background-color: $c-white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    height: 48px;
+    left:0;
+    right:0;
+    top:0;
+    z-index: 10;
+
+    @include shadow-standard;
+
+
+    .logo {
+
+        align-items: center;
+        background-color: $c-white;
+        display: flex;
+        padding: 0 0 0 48px;
+
+        img {
+
+            height: 16px;
+            @include MQ(M) {
+
+                height: 24px;
+                margin-bottom: 6px;
+            }
+        }
+    }
+
+    .cta {
+
+
+        align-items: center;
+        background-color: $c-secondary;
+        color: $c-white;
+        cursor: pointer;
+        display: flex;
+        letter-spacing: 1px;
+        padding: 0 48px;
+        text-transform: uppercase;
+
+        @include transition;
+
+        &:hover { background-color: $c-primary; }
+    }
+}

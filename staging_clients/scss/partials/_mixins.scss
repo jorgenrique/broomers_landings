@@ -36,7 +36,7 @@
     box-shadow: 0px 0px 20px 0px rgba($c-black,0.25);
 }
 
-@mixin button($bg-1: $c-red_light, $bg-2: $c-red_light, $text-color: $c-white) {
+@mixin button($bg-1: $c-secondary, $bg-2: $c-secondary, $text-color: $c-white) {
 
     @include shadow-standard;
     @include transition;
@@ -87,7 +87,7 @@
     } @else if $canvas == XL {
 
         @media only screen and (min-width: $XL) { @content; }
-        
+
     } @else if $canvas == XXL {
 
         @media only screen and (min-width: $XXL) { @content; }
