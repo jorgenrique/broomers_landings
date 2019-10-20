@@ -1,0 +1,136 @@
+.contact-form {
+
+    @include transition;
+
+    background: linear-gradient(180deg, $c-primary__dark 0%, $c-primary 100%);
+    bottom: 0;
+    color: $c-white;
+    left: 0;
+    opacity: 0;
+    overflow-y: auto;
+    padding: 1rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -2;
+
+    &.show {
+
+        opacity: 1;
+        top: 0;
+        z-index: 12;
+    }
+
+    .close-form-overlay {
+
+        @include transition;
+
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid $c-white;
+        color: $c-white;
+        cursor: pointer;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        position: fixed;
+        right: 16px;
+        top: 16px;
+        width: 40px;
+        z-index: 14;
+    }
+
+    .content {
+
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-top: 80px;
+
+        p {
+
+            margin-bottom: 4rem;
+            max-width: 600px;
+            text-align: center;
+        }
+    }
+}
+
+
+.broomer-contact-form {
+
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+
+    &.desktop {
+
+        @include MQ(M) { display: flex; }
+        display: none;
+        flex: 1;
+    }
+
+    &.mobile { @include MQ(M) { display: none; }}
+
+    .content {
+
+        align-items: center;
+        background-color: $c-white;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        padding-top: 80px;
+
+        @include MQ(M) { padding: 5rem }
+
+        p {
+
+            margin-bottom: 4rem;
+            max-width: 600px;
+            text-align: center;
+        }
+    }
+}
+
+.form-signup {
+
+    max-width: 400px;
+    width: 100%;
+
+    .indicates-required {
+
+        font-size: 11px;
+        text-align: right;
+    }
+
+    .mc-field-group {
+
+        margin-bottom: 2rem;
+
+        input {
+
+            @include shadow-standard;
+
+            border: none;
+            border-radius: 4px;
+            line-height: 2;
+            font-size: 1rem;
+            height: 2.5rem;
+            margin-top: 0.5rem;
+            padding: 0 0.5rem;
+            width: 100%;
+        }
+    }
+
+    .clear {
+
+        display: flex;
+        justify-content: center;
+
+        .button {
+
+            @include button;
+            border-color: transparent;
+        }
+    }
+}
