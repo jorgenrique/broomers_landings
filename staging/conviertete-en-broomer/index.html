@@ -19,10 +19,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="../favicon.ico" />
 
-    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Resource style -->
 
     <title>¡Conviértete en Broomer!</title>
 
@@ -41,13 +41,11 @@
 
     <header class="header">
 
-        <div class="logo"><img src="svg/logo.svg" alt="Broomers"></div>
-         <!--div class="cta mobile">Reserva ya</div-->
+        <div class="logo"><img src="../svg/logo.svg" alt="Broomers"></div>
+
     </header>
 
     <div class="wrapper">
-
-        <div class="logo"><img src="svg/logo.svg" alt="Broomers"></div>
 
         <section class="hero broomer">
 
@@ -68,17 +66,35 @@
 
                         <!-- Begin Mailchimp Signup Form -->
                         <div id="mc_embed_signup" class="form-signup">
-                            <form action="https://gmail.us3.list-manage.com/subscribe/post?u=e6f96c322fc7999ed931ff26d&amp;id=97c308fa53" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <form action="https://app.us3.list-manage.com/subscribe/post?u=e6f96c322fc7999ed931ff26d&amp;id=97c308fa53" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                 <div id="mc_embed_signup_scroll">
-                                    <div class="indicates-required"><span class="asterisk">*</span>obligatorio</div>
+                                    <div class="indicates-required"><span class="asterisk">*</span> campos requeridos</div>
                                     <div class="mc-field-group">
-                                        <label for="mce-EMAIL">Email<span class="asterisk">*</span>
+                                        <label for="mce-EMAIL">Email  <span class="asterisk">*</span>
                                         </label>
-                                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Tu email">
+                                        <input type="email" value="" placeholder="Tu email aquí" name="EMAIL" class="required email" id="mce-EMAIL">
                                     </div>
                                     <div class="mc-field-group">
-                                        <label for="mce-FNAME">Nombre</label>
-                                        <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="Tu nombre">
+                                        <label for="mce-FNAME">Nombre  <span class="asterisk">*</span>
+                                        </label>
+                                        <input type="text" value="" placeholder="Tu nombre aquí" name="FNAME" class="required" id="mce-FNAME">
+                                    </div>
+                                    <div class="mc-field-group">
+                                        <label for="mce-MMERGE2">Ciudad  <span class="asterisk">*</span>
+                                        </label>
+                                        <select name="MMERGE2" class="required" id="mce-MMERGE2">
+                                            <option value="" disabled selected>Elige tu ciudad</option>
+                                            <option value="Bogotá">Bogotá</option>
+                                            <option value="Cali">Cali</option>
+                                            <option value="Medellín">Medellín</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="mc-field-group input-group" style="display:none">
+                                        <strong>Type </strong>
+                                        <ul><li><input type="checkbox" value="1" name="group[26013][1]" id="mce-group[26013]-26013-0"><label for="mce-group[26013]-26013-0">Clients</label></li>
+                                            <li><input type="checkbox" value="2" name="group[26013][2]" id="mce-group[26013]-26013-1" checked><label for="mce-group[26013]-26013-1">Broomers</label></li>
+                                        </ul>
                                     </div>
                                     <div id="mce-responses" class="clear">
                                         <div class="response" id="mce-error-response" style="display:none"></div>
@@ -103,17 +119,35 @@
 
                 <!-- Begin Mailchimp Signup Form -->
                 <div id="mc_embed_signup" class="form-signup">
-                    <form action="https://gmail.us3.list-manage.com/subscribe/post?u=e6f96c322fc7999ed931ff26d&amp;id=97c308fa53" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <form action="https://app.us3.list-manage.com/subscribe/post?u=e6f96c322fc7999ed931ff26d&amp;id=97c308fa53" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <div id="mc_embed_signup_scroll">
-                            <div class="indicates-required"><span class="asterisk">*</span>obligatorio</div>
+                            <div class="indicates-required"><span class="asterisk">*</span> campos requeridos</div>
                             <div class="mc-field-group">
-                                <label for="mce-EMAIL">Email<span class="asterisk">*</span>
+                                <label for="mce-EMAIL">Email  <span class="asterisk">*</span>
                                 </label>
-                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Tu email">
+                                <input type="email" value="" placeholder="Tu email aquí" name="EMAIL" class="required email" id="mce-EMAIL">
                             </div>
                             <div class="mc-field-group">
-                                <label for="mce-FNAME">Nombre</label>
-                                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="Tu nombre">
+                                <label for="mce-FNAME">Nombre  <span class="asterisk">*</span>
+                                </label>
+                                <input type="text" value="" placeholder="Tu nombre aquí" name="FNAME" class="required" id="mce-FNAME">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-MMERGE2">Ciudad  <span class="asterisk">*</span>
+                                </label>
+                                <select name="MMERGE2" class="required" id="mce-MMERGE2">
+                                    <option value="" disabled selected>Elige tu ciudad</option>
+                                    <option value="Bogotá">Bogotá</option>
+                                    <option value="Cali">Cali</option>
+                                    <option value="Medellín">Medellín</option>
+
+                                </select>
+                            </div>
+                            <div class="mc-field-group input-group" style="display:none">
+                                <strong>Type </strong>
+                                <ul><li><input type="checkbox" value="1" name="group[26013][1]" id="mce-group[26013]-26013-0"><label for="mce-group[26013]-26013-0">Clients</label></li>
+                                    <li><input type="checkbox" value="2" name="group[26013][2]" id="mce-group[26013]-26013-1" checked><label for="mce-group[26013]-26013-1">Broomers</label></li>
+                                </ul>
                             </div>
                             <div id="mce-responses" class="clear">
                                 <div class="response" id="mce-error-response" style="display:none"></div>
@@ -124,7 +158,6 @@
                         </div>
                     </form>
                 </div>
-
                 <!--End mc_embed_signup-->
             </div>
         </div>
@@ -140,7 +173,7 @@
                         <p>Descárgate <b>gratis</b> la App en <b>iTunes</b> o <b>Google Play Store</b> y date de alta como un Broomer.</p>
                     </div>
 
-                    <img src="svg/step-1.svg" alt="Regístrate en nuestra app">
+                    <img src="../svg/step-1.svg" alt="Regístrate en nuestra app">
                 </div>
 
                 <div class="step s2">
@@ -150,7 +183,7 @@
                         <p>De Lunes a Domingo de 8am a 10pm y en la ciudad que quieras.</p>
                     </div>
 
-                    <img src="svg/step-2.svg" alt="Elige un Broomer">
+                    <img src="../svg/step-2.svg" alt="Elige un Broomer">
                 </div>
 
                 <div class="step s3">
@@ -160,7 +193,7 @@
                         <p>Acumula buenas experiencias con tus clientes y obtén buenas reseñas.</p>
                     </div>
 
-                    <img src="svg/step-3.svg" alt="Confirma tu servicio">
+                    <img src="../svg/step-3.svg" alt="Confirma tu servicio">
                 </div>
         </section>
 
@@ -172,28 +205,28 @@
 
                 <div class="reason r1">
 
-                    <div class="reason-icon"><img src="svg/lock.svg" alt="Seguridad"></div>
+                    <div class="reason-icon"><img src="../svg/lock.svg" alt="Seguridad"></div>
                     <h4>Seguridad</h4>
                     <p>Velamos por tu seguridad y la de nuestros clientes. Revisamos el pasado judicial de todos los Broomers.</p>
                 </div>
 
                 <div class="reason r2">
 
-                    <div class="reason-icon"><img src="svg/fast.svg" alt="Rapidez"></div>
+                    <div class="reason-icon"><img src="../svg/fast.svg" alt="Rapidez"></div>
                     <h4>Tranquilidad</h4>
                     <p>Tú decides las ofertas que aceptas y rechazas ¡Sin ningún compromiso!</p>
                 </div>
 
                 <div class="reason r3">
 
-                    <div class="reason-icon"><img src="svg/check.svg" alt="Comodidad"></div>
+                    <div class="reason-icon"><img src="../svg/check.svg" alt="Comodidad"></div>
                     <h4>Comodidad</h4>
                     <p>Administra todo en línea y con el soporte de nuestro equipo.</p>
                 </div>
 
                 <div class="reason r4">
 
-                    <div class="reason-icon"><img src="svg/tranquilidad.svg" alt="Ahorro"></div>
+                    <div class="reason-icon"><img src="../svg/tranquilidad.svg" alt="Ahorro"></div>
                     <h4>Facilidad</h4>
                     <p>Gana dinero y ayuda a ser feliz a la gente.</p>
                 </div>
@@ -207,17 +240,17 @@
             <div class="cities">
 
                 <div class="location">
-                    <div class="icon"><img src="svg/location.svg" alt="pin"></div>
+                    <div class="icon"><img src="../svg/location.svg" alt="pin"></div>
                     <h4>Bogotá</h4>
                 </div>
 
                 <div class="location">
-                    <div class="icon"><img src="svg/location.svg" alt="pin"></div>
+                    <div class="icon"><img src="../svg/location.svg" alt="pin"></div>
                     <h4>Cali</h4>
                 </div>
 
                 <div class="location">
-                    <div class="icon"><img src="svg/location.svg" alt="pin"></div>
+                    <div class="icon"><img src="../svg/location.svg" alt="pin"></div>
                     <h4>Medellín</h4>
                 </div>
             </div>
@@ -226,7 +259,7 @@
         <footer class="footer"><a href="mailto:info@broomers.com">info@broomers.app</a></footer>
     </div>
 
-    <script src="js/main.js"></script>
+    <!--script src="js/main.js"></script-->
 
 </body>
 </html>

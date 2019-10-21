@@ -43,20 +43,24 @@ h6 {
   text-align: center;
   line-height: 1.2; }
 
-.wrapper section {
-  padding: 8rem 1rem 0 1rem; }
-  .wrapper section.hero {
-    padding: 7rem 0 0 0; }
-  .wrapper section.locations, .wrapper section.reasons {
-    padding-bottom: 8rem; }
-.wrapper .footer {
-  display: flex;
-  font-size: 12px;
-  justify-content: center;
-  padding: 8px 0; }
-  .wrapper .footer a {
-    margin-left: 4px;
-    text-decoration: underline; }
+.wrapper {
+  margin-top: 48px; }
+  .wrapper section {
+    padding: 8rem 1rem 0 1rem; }
+    .wrapper section.hero {
+      padding: 7rem 0 0 0; }
+      .wrapper section.hero.broomer {
+        padding-top: 4rem; }
+    .wrapper section.locations, .wrapper section.reasons {
+      padding-bottom: 8rem; }
+  .wrapper .footer {
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    padding: 8px 0; }
+    .wrapper .footer a {
+      margin-left: 4px;
+      text-decoration: underline; }
 
 .header {
   background-color: #fff;
@@ -109,7 +113,7 @@ h6 {
   background: linear-gradient(180deg, #145D08 0%, #439417 100%);
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: calc(100vh - 48px);
   position: relative;
   width: 100vw; }
   .hero.client .content {
@@ -164,7 +168,7 @@ h6 {
   width: 100vw; }
   @media only screen and (min-width: 768px) {
     .hero.broomer {
-      height: 100vh; } }
+      height: calc(100vh - 48px); } }
   .hero.broomer:after {
     content: "";
     background-image: linear-gradient(to top right, white 30%, rgba(255, 255, 255, 0));
@@ -202,7 +206,7 @@ h6 {
     align-items: center; }
     @media only screen and (min-width: 768px) {
       .hero.broomer .broomer-contact-form .content {
-        padding: 5rem; } }
+        padding: 3rem; } }
 
 .steps {
   align-items: center;
@@ -365,7 +369,8 @@ h6 {
     text-align: right; }
   .form-signup .mc-field-group {
     margin-bottom: 2rem; }
-    .form-signup .mc-field-group input {
+    .form-signup .mc-field-group input,
+    .form-signup .mc-field-group select {
       -webkit-box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
       -moz-box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
       box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
@@ -377,6 +382,8 @@ h6 {
       margin-top: 0.5rem;
       padding: 0 0.5rem;
       width: 100%; }
+    .form-signup .mc-field-group select .grey {
+      color: rgba(34, 34, 34, 0.5); }
   .form-signup .clear {
     display: flex;
     justify-content: center; }
@@ -386,7 +393,7 @@ h6 {
       box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
       transition: all 0.5s ease-in-out;
       background: linear-gradient(90deg, #ff8c00 0%, #ff8c00 100%);
-      border-radius: 21px;
+      border-radius: 4px;
       cursor: pointer;
       color: #fff;
       font-size: 14px;
@@ -406,7 +413,7 @@ h6 {
   box-sizing: border-box; }
 
 ::selection {
-  background: #439417;
+  background: #ff8c00;
   color: #fff; }
 
 ::-moz-selection {

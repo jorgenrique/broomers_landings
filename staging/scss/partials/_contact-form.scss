@@ -107,7 +107,8 @@
 
         margin-bottom: 2rem;
 
-        input {
+        input,
+        select {
 
             @include shadow-standard;
 
@@ -120,6 +121,8 @@
             padding: 0 0.5rem;
             width: 100%;
         }
+
+        select .grey { color: rgba($c-black, 0.5) }
     }
 
     .clear {
