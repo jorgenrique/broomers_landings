@@ -14,7 +14,7 @@
             align-items: center;
             display: flex;
             flex-direction: column;
-            padding: 0 1rem 2rem 1rem;
+            padding: 0 1rem;
 
             h1,
             p {
@@ -68,8 +68,11 @@
             }
         }
     }
+}
 
-    &.broomer {
+.broomer {
+
+    .hero {
 
         background-image: url('../img/house.jpg');
         background-position: center;

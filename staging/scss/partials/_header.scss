@@ -18,16 +18,36 @@
         align-items: center;
         background-color: $c-white;
         display: flex;
-        padding: 0 0 0 48px;
+        padding: 0 0 0 24px;
+
+        @include MQ(M) { padding-left: 48px; }
 
         img {
 
             height: 16px;
+
             @include MQ(M) {
 
                 height: 24px;
                 margin-bottom: 6px;
             }
+        }
+    }
+
+    .right  {
+
+        display: flex;
+        align-items: center;
+
+        .lang {
+
+            display: flex;
+            align-items: center;
+            padding: 16px;
+
+            @include MQ(M) { margin-right: 16px; }
+
+            img { width: 24px; }
         }
     }
 
@@ -40,7 +60,7 @@
         text-transform: uppercase;
 
         position: fixed;
-        bottom: 0;
+        bottom: 30px;
         left: 0;
         right: 0;
         padding: 12px 0;
@@ -55,8 +75,8 @@
 
             align-items: center;
             display: flex;
+            height: 100%;
             padding: 0 48px;
-
             position: static;
 
             @include transition;

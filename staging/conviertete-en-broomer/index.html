@@ -45,9 +45,9 @@
 
     </header>
 
-    <div class="wrapper">
+    <div class="wrapper broomer">
 
-        <section class="hero broomer">
+        <section class="hero">
 
             <div class="hero-wrapper">
 
@@ -68,32 +68,35 @@
                         <div id="mc_embed_signup" class="form-signup">
                             <form action="https://app.us3.list-manage.com/subscribe/post?u=e6f96c322fc7999ed931ff26d&amp;id=97c308fa53" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                 <div id="mc_embed_signup_scroll">
-                                    <div class="indicates-required"><span class="asterisk">*</span> campos requeridos</div>
+
+                                    <div class="indicates-required"><span class="asterisk">*</span> indica campos requeridos</div>
                                     <div class="mc-field-group">
                                         <label for="mce-EMAIL">Email  <span class="asterisk">*</span>
                                         </label>
-                                        <input type="email" value="" placeholder="Tu email aquí" name="EMAIL" class="required email" id="mce-EMAIL">
+                                        <input type="email" placeholder="Tu email aquí" value="" name="EMAIL" class="required email" id="mce-EMAIL">
                                     </div>
                                     <div class="mc-field-group">
                                         <label for="mce-FNAME">Nombre  <span class="asterisk">*</span>
                                         </label>
-                                        <input type="text" value="" placeholder="Tu nombre aquí" name="FNAME" class="required" id="mce-FNAME">
+                                        <input type="text" placeholder="Tu nombre aquí" value="" name="FNAME" class="required" id="mce-FNAME">
                                     </div>
                                     <div class="mc-field-group">
                                         <label for="mce-MMERGE2">Ciudad  <span class="asterisk">*</span>
                                         </label>
                                         <select name="MMERGE2" class="required" id="mce-MMERGE2">
                                             <option value="" disabled selected>Elige tu ciudad</option>
+                                            <option value="Medellín">Medellín</option>
                                             <option value="Bogotá">Bogotá</option>
                                             <option value="Cali">Cali</option>
-                                            <option value="Medellín">Medellín</option>
+                                            <option value="Barranquilla">Barranquilla</option>
 
                                         </select>
                                     </div>
                                     <div class="mc-field-group input-group" style="display:none">
                                         <strong>Type </strong>
-                                        <ul><li><input type="checkbox" value="1" name="group[26013][1]" id="mce-group[26013]-26013-0"><label for="mce-group[26013]-26013-0">Clients</label></li>
+                                        <ul><li><input type="checkbox" value="1" name="group[26013][1]" id="mce-group[26013]-26013-0"><label for="mce-group[26013]-26013-0">Clients-es</label></li>
                                             <li><input type="checkbox" value="2" name="group[26013][2]" id="mce-group[26013]-26013-1" checked><label for="mce-group[26013]-26013-1">Broomers</label></li>
+                                            <li><input type="checkbox" value="4" name="group[26013][4]" id="mce-group[26013]-26013-2"><label for="mce-group[26013]-26013-2">Clients-en</label></li>
                                         </ul>
                                     </div>
                                     <div id="mce-responses" class="clear">
@@ -101,10 +104,35 @@
                                         <div class="response" id="mce-success-response" style="display:none"></div>
                                     </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e6f96c322fc7999ed931ff26d_97c308fa53" tabindex="-1" value=""></div>
-                                    <div class="clear"><input type="submit" value="Enviar" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                                 </div>
                             </form>
                         </div>
+                        <script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                        <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='MMERGE2';ftypes[2]='dropdown'; /*
+                            * Translated default messages for the $ validation plugin.
+                            * Locale: ES
+                            */
+                            $.extend($.validator.messages, {
+                                required: "Este campo es obligatorio.",
+                                remote: "Por favor, rellena este campo.",
+                                email: "Por favor, escribe una dirección de correo válida",
+                                url: "Por favor, escribe una URL válida.",
+                                date: "Por favor, escribe una fecha válida.",
+                                dateISO: "Por favor, escribe una fecha (ISO) válida.",
+                                number: "Por favor, escribe un número entero válido.",
+                                digits: "Por favor, escribe sólo dígitos.",
+                                creditcard: "Por favor, escribe un número de tarjeta válido.",
+                                equalTo: "Por favor, escribe el mismo valor de nuevo.",
+                                accept: "Por favor, escribe un valor con una extensión aceptada.",
+                                maxlength: $.validator.format("Por favor, no escribas más de {0} caracteres."),
+                                minlength: $.validator.format("Por favor, no escribas menos de {0} caracteres."),
+                                rangelength: $.validator.format("Por favor, escribe un valor entre {0} y {1} caracteres."),
+                                range: $.validator.format("Por favor, escribe un valor entre {0} y {1}."),
+                                max: $.validator.format("Por favor, escribe un valor menor o igual a {0}."),
+                                min: $.validator.format("Por favor, escribe un valor mayor o igual a {0}.")
+                            });}(jQuery));var $mcj = jQuery.noConflict(true);
+                        </script>
                         <!--End mc_embed_signup-->
                     </div>
                 </div>
@@ -121,32 +149,35 @@
                 <div id="mc_embed_signup" class="form-signup">
                     <form action="https://app.us3.list-manage.com/subscribe/post?u=e6f96c322fc7999ed931ff26d&amp;id=97c308fa53" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <div id="mc_embed_signup_scroll">
-                            <div class="indicates-required"><span class="asterisk">*</span> campos requeridos</div>
+
+                            <div class="indicates-required"><span class="asterisk">*</span> indica campos requeridos</div>
                             <div class="mc-field-group">
                                 <label for="mce-EMAIL">Email  <span class="asterisk">*</span>
                                 </label>
-                                <input type="email" value="" placeholder="Tu email aquí" name="EMAIL" class="required email" id="mce-EMAIL">
+                                <input type="email" placeholder="Tu email aquí" value="" name="EMAIL" class="required email" id="mce-EMAIL">
                             </div>
                             <div class="mc-field-group">
                                 <label for="mce-FNAME">Nombre  <span class="asterisk">*</span>
                                 </label>
-                                <input type="text" value="" placeholder="Tu nombre aquí" name="FNAME" class="required" id="mce-FNAME">
+                                <input type="text" placeholder="Tu nombre aquí" value="" name="FNAME" class="required" id="mce-FNAME">
                             </div>
                             <div class="mc-field-group">
                                 <label for="mce-MMERGE2">Ciudad  <span class="asterisk">*</span>
                                 </label>
                                 <select name="MMERGE2" class="required" id="mce-MMERGE2">
                                     <option value="" disabled selected>Elige tu ciudad</option>
+                                    <option value="Medellín">Medellín</option>
                                     <option value="Bogotá">Bogotá</option>
                                     <option value="Cali">Cali</option>
-                                    <option value="Medellín">Medellín</option>
+                                    <option value="Barranquilla">Barranquilla</option>
 
                                 </select>
                             </div>
                             <div class="mc-field-group input-group" style="display:none">
                                 <strong>Type </strong>
-                                <ul><li><input type="checkbox" value="1" name="group[26013][1]" id="mce-group[26013]-26013-0"><label for="mce-group[26013]-26013-0">Clients</label></li>
+                                <ul><li><input type="checkbox" value="1" name="group[26013][1]" id="mce-group[26013]-26013-0"><label for="mce-group[26013]-26013-0">Clients-es</label></li>
                                     <li><input type="checkbox" value="2" name="group[26013][2]" id="mce-group[26013]-26013-1" checked><label for="mce-group[26013]-26013-1">Broomers</label></li>
+                                    <li><input type="checkbox" value="4" name="group[26013][4]" id="mce-group[26013]-26013-2"><label for="mce-group[26013]-26013-2">Clients-en</label></li>
                                 </ul>
                             </div>
                             <div id="mce-responses" class="clear">
@@ -154,10 +185,34 @@
                                 <div class="response" id="mce-success-response" style="display:none"></div>
                             </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e6f96c322fc7999ed931ff26d_97c308fa53" tabindex="-1" value=""></div>
-                            <div class="clear"><input type="submit" value="Enviar" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                         </div>
                     </form>
                 </div>
+                <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='MMERGE2';ftypes[2]='dropdown'; /*
+                    * Translated default messages for the $ validation plugin.
+                    * Locale: ES
+                    */
+                    $.extend($.validator.messages, {
+                        required: "Este campo es obligatorio.",
+                        remote: "Por favor, rellena este campo.",
+                        email: "Por favor, escribe una dirección de correo válida",
+                        url: "Por favor, escribe una URL válida.",
+                        date: "Por favor, escribe una fecha válida.",
+                        dateISO: "Por favor, escribe una fecha (ISO) válida.",
+                        number: "Por favor, escribe un número entero válido.",
+                        digits: "Por favor, escribe sólo dígitos.",
+                        creditcard: "Por favor, escribe un número de tarjeta válido.",
+                        equalTo: "Por favor, escribe el mismo valor de nuevo.",
+                        accept: "Por favor, escribe un valor con una extensión aceptada.",
+                        maxlength: $.validator.format("Por favor, no escribas más de {0} caracteres."),
+                        minlength: $.validator.format("Por favor, no escribas menos de {0} caracteres."),
+                        rangelength: $.validator.format("Por favor, escribe un valor entre {0} y {1} caracteres."),
+                        range: $.validator.format("Por favor, escribe un valor entre {0} y {1}."),
+                        max: $.validator.format("Por favor, escribe un valor menor o igual a {0}."),
+                        min: $.validator.format("Por favor, escribe un valor mayor o igual a {0}.")
+                    });}(jQuery));var $mcj = jQuery.noConflict(true);
+                </script>
                 <!--End mc_embed_signup-->
             </div>
         </div>
@@ -235,23 +290,27 @@
 
         <section class="locations">
 
-            <h2>Próximamente en las siguientes ciudades:</h2>
+            <h2>Inicialmente en las siguientes ciudades:</h2>
 
             <div class="cities">
 
-                <div class="location">
-                    <div class="icon"><img src="../svg/location.svg" alt="pin"></div>
-                    <h4>Bogotá</h4>
+                <div class="location medellin">
+                    <h3 class="citi-name">Medellín</h3>
                 </div>
 
-                <div class="location">
-                    <div class="icon"><img src="../svg/location.svg" alt="pin"></div>
-                    <h4>Cali</h4>
+                <div class="location inactive bogota">
+                    <h3 class="citi-name">Bogotá</h3>
+                    <p class="next">Proximamente</p>
                 </div>
 
-                <div class="location">
-                    <div class="icon"><img src="../svg/location.svg" alt="pin"></div>
-                    <h4>Medellín</h4>
+                <div class="location inactive cali">
+                    <h3 class="citi-name">Cali</h3>
+                    <p class="next">Proximamente</p>
+                </div>
+
+                <div class="location inactive barranquilla">
+                    <h3 class="citi-name">Barranquilla</h3>
+                    <p class="next">Proximamente</p>
                 </div>
             </div>
         </section>

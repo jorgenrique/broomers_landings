@@ -1,27 +1,36 @@
 .wrapper {
 
-    margin-top: 48px;
+    margin: 48px 0 70px;
+    @include MQ(M) { margin-bottom: 0; }
+
+    &.broomer { margin-bottom: 30px; }
 
     section {
 
         padding: 8rem 1rem 0 1rem;
 
-        &.hero {
+        &.hero { padding: 4rem 0 0 0; }
 
-            padding: 7rem 0 0 0;
-            &.broomer { padding-top: 4rem; }
-        }
+        &.locations { padding: 5rem 0 0; }
 
-
-        &.locations,
         &.reasons { padding-bottom: 8rem; }
     }
 
     .footer {
+
+        background-color: $c-white;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+
         display: flex;
         font-size: 12px;
         justify-content: center;
         padding: 8px 0;
+
+        @include MQ(M) { position: static; }
 
         a {
 

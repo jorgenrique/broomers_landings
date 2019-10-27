@@ -5,19 +5,72 @@
     .cities {
 
         display: flex;
+        flex-wrap: wrap;
         margin: auto;
-        max-width: 480px;
 
         .location {
 
+            width: 50%;
+            height: 50vw;
+            position: relative;
+
+            background-size: cover;
+
             align-items: center;
             display: flex;
-            flex: 1;
             flex-direction: column;
             justify-content: center;
+
+            @include MQ(M) {
+
+                width: 25%;
+                height: 25vw;
+            }
+
+            &.medellin { background-image: url('../img/medellin.jpg'); }
+            &.cali { background-image: url('../img/cali.jpg'); }
+            &.bogota { background-image: url('../img/bogota.jpg'); }
+            &.barranquilla { background-image: url('../img/barranquilla.jpg'); }
+
+            &:before {
+
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-color: rgba($c-black, 0.2);
+                z-index: 2;
+            }
+
+            &.inactive {
+
+                .next {
+
+                    color: $c-white;
+                    position: absolute;
+                    bottom: 24px;
+                    right: 0;
+                    left: 0;
+                    margin: 0;
+                    z-index: 4;
+                    text-align: center;
+                }
+
+                &:before { background-color: rgba($c-black, 0.5); }
+            }
         }
     }
 
     h2,
-    h4 { color: white; }
+    .citi-name { color: white; }
+
+    .citi-name {
+
+        position: relative;
+        font-weight: bold;
+        z-index: 4;
+        margin: 0;
+    }
 }
