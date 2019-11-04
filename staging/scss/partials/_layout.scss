@@ -3,7 +3,11 @@
     margin: 48px 0 70px;
     @include MQ(M) { margin-bottom: 0; }
 
-    &.broomer { margin-bottom: 30px; }
+    &.broomer {
+
+      margin-bottom: 30px;
+      @include MQ(M) { margin-bottom: 0; }
+    }
 
     section {
 
