@@ -80,8 +80,11 @@ h6 {
 .wrapper section.reasons {
   padding-bottom: 8rem;
 }
+.wrapper section.join {
+  padding-bottom: 4rem;
+}
 .wrapper .footer {
-  background-color: #fff;
+  background-color: #439417;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -98,6 +101,7 @@ h6 {
   }
 }
 .wrapper .footer a {
+  color: #fff;
   margin-left: 4px;
   text-decoration: underline;
 }
@@ -466,6 +470,18 @@ h6 {
   font-weight: bold;
   z-index: 4;
   margin: 0;
+}
+
+.join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.join a {
+  background-color: #439417;
+  padding: 12px 24px;
+  color: #fff;
 }
 
 .contact-form {

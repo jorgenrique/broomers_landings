@@ -18,11 +18,13 @@
         &.locations { padding: 5rem 0 0; }
 
         &.reasons { padding-bottom: 8rem; }
+
+        &.join { padding-bottom: 4rem; }
     }
 
     .footer {
 
-        background-color: $c-white;
+        background-color: $c-primary;
         position: fixed;
         bottom: 0;
         left: 0;
@@ -38,6 +40,7 @@
 
         a {
 
+            color: $c-white;
             margin-left: 4px;
             text-decoration: underline;
         }
