@@ -54,6 +54,7 @@ h6 {
 
 .wrapper {
   margin: 48px 0 70px;
+  width: 100vw;
 }
 @media only screen and (min-width: 768px) {
   .wrapper {
@@ -77,11 +78,8 @@ h6 {
 .wrapper section.locations {
   padding: 5rem 0 0;
 }
-.wrapper section.reasons {
+.wrapper section.reasons, .wrapper section.join {
   padding-bottom: 8rem;
-}
-.wrapper section.join {
-  padding-bottom: 4rem;
 }
 .wrapper .footer {
   background-color: #439417;
@@ -478,10 +476,28 @@ h6 {
   align-items: center;
   flex-direction: column;
 }
+.join h2 {
+  margin-bottom: 2rem;
+}
 .join a {
-  background-color: #439417;
-  padding: 12px 24px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
+  box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
+  transition: all 0.5s ease-in-out;
+  background: linear-gradient(90deg, #439417 0%, #439417 100%);
+  border-radius: 4px;
+  cursor: pointer;
   color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 12px 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.join a:hover {
+  color: #439417;
+  background: linear-gradient(90deg, #fff 0%, #fff 100%);
 }
 
 .contact-form {

@@ -1,6 +1,7 @@
 .wrapper {
 
     margin: 48px 0 70px;
+    width: 100vw;
     @include MQ(M) { margin-bottom: 0; }
 
     &.broomer {
@@ -17,9 +18,8 @@
 
         &.locations { padding: 5rem 0 0; }
 
-        &.reasons { padding-bottom: 8rem; }
-
-        &.join { padding-bottom: 4rem; }
+        &.reasons,
+        &.join { padding-bottom: 8rem; }
     }
 
     .footer {
