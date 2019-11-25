@@ -1,7 +1,6 @@
 .wrapper {
 
     margin: 48px 0 70px;
-    width: 100vw;
     @include MQ(M) { margin-bottom: 0; }
 
     &.broomer {
@@ -24,25 +23,31 @@
 
     .footer {
 
-        background-color: $c-primary;
+        background-color: $c-white;
         position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: 2;
+        z-index: 4;
 
         display: flex;
         font-size: 12px;
         justify-content: center;
         padding: 8px 0;
 
-        @include MQ(M) { position: static; }
+        @include MQ(M) {
+
+          position: static;
+          background-color: $c-primary;
+        }
 
         a {
 
-            color: $c-white;
+            color: $c-primary;
             margin-left: 4px;
             text-decoration: underline;
+
+            @include MQ(M) { color: $c-white; }
         }
     }
 }
