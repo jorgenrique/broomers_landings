@@ -3,6 +3,8 @@
     margin: 48px 0 70px;
     @include MQ(M) { margin-bottom: 0; }
 
+    width: 100vw;
+
     &.broomer {
 
       margin-bottom: 30px;
@@ -12,6 +14,7 @@
     section {
 
         padding: 8rem 1rem 0 1rem;
+        width: 100%;
 
         &.hero { padding: 4rem 0 0 0; }
 

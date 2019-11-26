@@ -54,6 +54,7 @@ h6 {
 
 .wrapper {
   margin: 48px 0 70px;
+  width: 100vw;
 }
 @media only screen and (min-width: 768px) {
   .wrapper {
@@ -70,6 +71,7 @@ h6 {
 }
 .wrapper section {
   padding: 8rem 1rem 0 1rem;
+  width: 100%;
 }
 .wrapper section.hero {
   padding: 4rem 0 0 0;
@@ -110,6 +112,7 @@ h6 {
 }
 
 .header {
+  align-items: center;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -126,12 +129,15 @@ h6 {
 .header .logo {
   align-items: center;
   background-color: #fff;
+  border: none;
   display: flex;
-  padding: 0 0 0 24px;
+  margin: 0 0 0 24px;
 }
 @media only screen and (min-width: 768px) {
   .header .logo {
-    padding-left: 48px;
+    margin-left: 48px;
+    margin-bottom: 6px;
+    position: relative;
   }
 }
 .header .logo img {
@@ -139,8 +145,9 @@ h6 {
 }
 @media only screen and (min-width: 768px) {
   .header .logo img {
+    display: block;
     height: 24px;
-    margin-bottom: 6px;
+    width: 120px;
   }
 }
 .header .right {
@@ -148,8 +155,9 @@ h6 {
   align-items: center;
 }
 .header .right .lang {
-  display: flex;
   align-items: center;
+  border: none;
+  display: flex;
   padding: 16px;
 }
 @media only screen and (min-width: 768px) {
@@ -182,7 +190,7 @@ h6 {
   .header .cta {
     align-items: center;
     display: flex;
-    height: 100%;
+    height: 48px;
     padding: 0 48px;
     position: static;
     transition: all 0.5s ease-in-out;
@@ -349,6 +357,7 @@ h6 {
 .steps .step p {
   margin-bottom: 0.5rem;
   text-align: left;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .steps .step {
@@ -393,6 +402,7 @@ h6 {
 .reasons .content .reason p {
   margin-bottom: 1rem;
   text-align: center;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .reasons .content .reason {
