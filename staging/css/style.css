@@ -496,11 +496,9 @@ h6 {
   margin-bottom: 2rem;
 }
 .join a {
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
-  box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
   transition: all 0.5s ease-in-out;
   background: linear-gradient(90deg, #439417 0%, #439417 100%);
+  border: 1px solid #439417;
   cursor: pointer;
   color: #fff;
   font-size: 14px;
@@ -632,11 +630,9 @@ h6 {
   justify-content: center;
 }
 .form-signup .clear .button {
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
-  box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
   transition: all 0.5s ease-in-out;
   background: linear-gradient(90deg, #ff8c00 0%, #ff8c00 100%);
+  border: 1px solid #ff8c00;
   cursor: pointer;
   color: #fff;
   font-size: 14px;
