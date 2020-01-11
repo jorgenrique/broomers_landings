@@ -122,9 +122,9 @@ h6 {
   right: 0;
   top: 0;
   z-index: 10;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
-  box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.1);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.1);
+  box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.1);
 }
 .header .logo {
   align-items: center;
@@ -610,9 +610,9 @@ h6 {
 }
 .form-signup .mc-field-group input,
 .form-signup .mc-field-group select {
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
-  box-shadow: 0px 0px 20px 0px rgba(34, 34, 34, 0.25);
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.1);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.1);
+  box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.1);
   border: none;
   border-radius: 4px;
   line-height: 2;
